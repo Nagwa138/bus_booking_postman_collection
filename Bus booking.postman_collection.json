@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "95d56ce4-fa08-4502-bbc2-01e6f0efd369",
+		"_postman_id": "896a0660-25c6-4177-bcf9-cdcfbbd73883",
 		"name": "Bus booking",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "13380675"
@@ -51,11 +51,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:1234/api/login",
+							"raw": "localhost:{{port}}/api/login",
 							"host": [
 								"localhost"
 							],
-							"port": "1234",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"login"
@@ -98,7 +98,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\" : \"june\",\n    \"email\" : \"jun1e26jhh5l@mail.com\",\n    \"password\" : \"12345678\",\n    \"password_confirmation\" : \"12345678\"\n}",
+							"raw": "{\n    \"name\" : \"june\",\n    \"email\" : \"june1263@mail.com\",\n    \"password\" : \"12345678\",\n    \"password_confirmation\" : \"12345678\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -106,11 +106,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:1234/api/register",
+							"raw": "localhost:{{port}}/api/register",
 							"host": [
 								"localhost"
 							],
-							"port": "1234",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"register"
@@ -227,11 +227,11 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:1234/api/logout",
+							"raw": "localhost:{{port}}/api/logout",
 							"host": [
 								"localhost"
 							],
-							"port": "1234",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"logout"
@@ -259,7 +259,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "2|R01qDnrNSSIdxn89GsL5bKiBvbpU8NQOY0LBgqjU",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -274,7 +274,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"start_station_id\" : 3,\n    \"end_station_id\" : 4\n}",
+							"raw": "{\n    \"start_station_id\" : 5,\n    \"end_station_id\" : 6\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -282,11 +282,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:1234/api/seats/list/1",
+							"raw": "localhost:{{port}}/api/seats/list/1",
 							"host": [
 								"localhost"
 							],
-							"port": "1234",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"seats",
@@ -310,7 +310,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "2|R01qDnrNSSIdxn89GsL5bKiBvbpU8NQOY0LBgqjU",
+									"value": "{{token}}",
 									"type": "string"
 								}
 							]
@@ -325,7 +325,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"seat_id\" : 9,\n    \"start_station_id\" : 3,\n    \"end_station_id\" : 4\n}",
+							"raw": "{\n    \"seat_id\" : 1,\n    \"start_station_id\" : 5,\n    \"end_station_id\" : 6\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -333,11 +333,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:1234/api/seats/book",
+							"raw": "localhost:{{port}}/api/seats/book",
 							"host": [
 								"localhost"
 							],
-							"port": "1234",
+							"port": "{{port}}",
 							"path": [
 								"api",
 								"seats",
@@ -369,11 +369,11 @@
 					}
 				],
 				"url": {
-					"raw": "localhost:1234/api/trips",
+					"raw": "localhost:{{port}}/api/trips",
 					"host": [
 						"localhost"
 					],
-					"port": "1234",
+					"port": "{{port}}",
 					"path": [
 						"api",
 						"trips"
